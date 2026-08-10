@@ -1,0 +1,32 @@
+# In dieser Datei sind *alle* Personen (und Rollen) aufgelistet, die jemals auf
+# der Website genannt wurden (auch Ehemalige). NICHTS ENTFERNEN, sonst geht
+# möglicherweise etwas kaputt. Lieber die Werte ändern, z.B. den Titel
+# aktualisieren.
+
+- name: Webmaster
+  role: ""
+
+- name: Friedrich Schulte-Kramer
+  role: 1. Vorsitzender
+  # image:
+
+- name: Reinhard Kaiser
+  role: 2. Vorsitzender
+
+- name: Axel Grote
+  role: Kassierer
+
+- name: Stefan Schraml
+  role: Schriftführer
+
+- name: Klaus Baulmann
+  role: Ehrenvorsitzender
+
+- name: Berthold Schröder
+  role: ""
+
+- name: Werner Neuhaus
+  role: ""
+
+- name: Franz-Josef Tigges
+  role: (1977-?)

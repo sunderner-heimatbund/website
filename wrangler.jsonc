@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "sunderner-heimatbund-website",
+  "compatibility_date": "2026-05-05",
+  "assets": {
+    "directory": "./public/",
+  },
+  "routes": [
+    {
+      "pattern": "sunderner-heimatbund.de",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.sunderner-heimatbund.de",
+      "custom_domain": true,
+    }
+  ],
+  "observability": {
+    "enabled": true,
+  },
+  "env": {
+    "preview": {
+      "routes": [
+        {
+          "pattern": "preview.sunderner-heimatbund.de",
+          "custom_domain": true,
+        },
+      ],
+    },
+  },
+}
