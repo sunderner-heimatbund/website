@@ -69,14 +69,17 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     name: Deploy production to sunderner-heimatbund.de
-    environment: production
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.deployment-url }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/download-artifact@v8
         with:
           name: hugo-dist
           path: public
-      - uses: cloudflare/wrangler-action@v4
+      - id: deploy
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -84,20 +87,27 @@ jobs:
           wranglerVersion: "4"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           command: deploy
+      - name: Write job summary
+        run: |
+          echo "### 🚀 Deployed to production" >> "$GITHUB_STEP_SUMMARY"
+          echo "${{ steps.deploy.outputs.deployment-url }}" >> "$GITHUB_STEP_SUMMARY"
 
   deploy-preview:
     needs: [build-pages]
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     name: Deploy preview to preview.sunderner-heimatbund.de
-    environment: preview
+    environment:
+      name: preview
+      url: ${{ steps.deploy.outputs.deployment-url }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/download-artifact@v8
         with:
           name: hugo-dist
           path: public
-      - uses: cloudflare/wrangler-action@v4
+      - id: deploy
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -105,3 +115,7 @@ jobs:
           wranglerVersion: "4"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           command: deploy --env preview
+      - name: Write job summary
+        run: |
+          echo "### 🚀 Deployed to preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "${{ steps.deploy.outputs.deployment-url }}" >> "$GITHUB_STEP_SUMMARY"
