@@ -71,7 +71,7 @@ jobs:
     name: Deploy production to sunderner-heimatbund.de
     environment:
       name: production
-      url: ${{ steps.deploy.outputs.deployment-url }}
+      url: ${{ steps.deploy-url.outputs.url }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/download-artifact@v8
@@ -87,10 +87,15 @@ jobs:
           wranglerVersion: "4"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           command: deploy
+      - id: deploy-url
+        name: Format deployment URL
+        run: |
+          RAW="${{ steps.deploy.outputs.deployment-url }}"
+          echo "url=https://${RAW%% *}" >> "$GITHUB_OUTPUT"
       - name: Write job summary
         run: |
           echo "### 🚀 Deployed to production" >> "$GITHUB_STEP_SUMMARY"
-          echo "${{ steps.deploy.outputs.deployment-url }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "${{ steps.deploy-url.outputs.url }}" >> "$GITHUB_STEP_SUMMARY"
 
   deploy-preview:
     needs: [build-pages]
@@ -99,7 +104,7 @@ jobs:
     name: Deploy preview to preview.sunderner-heimatbund.de
     environment:
       name: preview
-      url: ${{ steps.deploy.outputs.deployment-url }}
+      url: ${{ steps.deploy-url.outputs.url }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/download-artifact@v8
@@ -115,7 +120,12 @@ jobs:
           wranglerVersion: "4"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           command: deploy --env preview
+      - id: deploy-url
+        name: Format deployment URL
+        run: |
+          RAW="${{ steps.deploy.outputs.deployment-url }}"
+          echo "url=https://${RAW%% *}" >> "$GITHUB_OUTPUT"
       - name: Write job summary
         run: |
           echo "### 🚀 Deployed to preview" >> "$GITHUB_STEP_SUMMARY"
-          echo "${{ steps.deploy.outputs.deployment-url }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "${{ steps.deploy-url.outputs.url }}" >> "$GITHUB_STEP_SUMMARY"
