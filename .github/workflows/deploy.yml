@@ -1,0 +1,107 @@
+name: Deploy Cloudflare Workers
+
+# Description
+# ===========
+#
+# This action builds the Hugo site and deploys it as an assets-only
+# Cloudflare Worker. It has two independent triggers:
+#
+# - Pushing a date-versioned tag (e.g. 2026.08.10) deploys production, at
+#   sunderner-heimatbund.de / www.sunderner-heimatbund.de.
+# - Pushing plain commits to main (no tag) deploys a preview, at
+#   preview.sunderner-heimatbund.de.
+
+on:
+  push:
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+*"
+    branches:
+      - main
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  build-pages:
+    runs-on: ubuntu-latest
+    name: Compile static website with Hugo
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # The theme's Tailwind CSS pipe (css.TailwindCSS) shells out to
+      # @tailwindcss/cli, resolved from this repo's node_modules.
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.164.0"
+          extended: false
+
+      # Bake the correct absolute baseURL into canonical tags, sitemap.xml,
+      # RSS, and OpenGraph tags depending on which trigger fired this run.
+      - name: Build with Hugo
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            BASE_URL="https://preview.sunderner-heimatbund.de"
+          else
+            BASE_URL="https://www.sunderner-heimatbund.de"
+          fi
+          hugo --gc --minify --baseURL "$BASE_URL"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: hugo-dist
+          path: public
+          if-no-files-found: error
+
+  deploy-production:
+    needs: [build-pages]
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    name: Deploy production to sunderner-heimatbund.de
+    environment: production
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: hugo-dist
+          path: public
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          packageManager: npm
+          wranglerVersion: "4"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: deploy
+
+  deploy-preview:
+    needs: [build-pages]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    name: Deploy preview to preview.sunderner-heimatbund.de
+    environment: preview
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: hugo-dist
+          path: public
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          packageManager: npm
+          wranglerVersion: "4"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: deploy --env preview
