@@ -1,4 +1,6 @@
 baseURL: "https://www.sunderner-heimatbund.de"
+defaultContentLanguage: de
+languageCode: de-de
 locale: "de-de"
 title: "Sunderner Heimatbund e.V."
 
