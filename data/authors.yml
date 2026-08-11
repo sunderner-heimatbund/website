@@ -3,21 +3,55 @@
 # möglicherweise etwas kaputt. Lieber die Werte ändern, z.B. den Titel
 # aktualisieren.
 
-- name: Webmaster
-  role: ""
+- name: Sunderner Heimatbund
+  role: Webmaster
 
 - name: Friedrich Schulte-Kramer
   role: 1. Vorsitzender
-  # image:
 
 - name: Reinhard Kaiser
   role: 2. Vorsitzender
+  image: images/authors/reinhard_kaiser.jpg
+  bio: |
+    Jahrgang 1955
+    seit ca. 2010 im Verein
+    Ortsheimatpfleger in Linneppe
+    Interessen: Dorfgeschichte, Güllener Rin, Dokumentation in Bild und Schrift,
+    80 Jahre Kriegsende im Alten Testament, Feuerwehr- & Schützenwesne,
+    Gottesdienst
 
 - name: Axel Grote
   role: Kassierer
+  image: images/authors/axel_grote.jpg
+  bio: |
+    Mein Name ist Axel Grote, ich bin 61 Jahre alt und lebe seit Geburt im
+    Elternhaus in Sundern. Seit 1986 bin ich als Bankkaufmann bei der Volksbank
+    Sauerland eG (ehem. Volksbank Sundern eG) beschäftigt, davon über 30 Jahre
+    in der Kreditabteilung. Inzwischen befinde ich mich in der passiven Phase
+    der Altersteilzeit, habe also mein "aktives" Arbeitsleben beendet. Auch wenn
+    ich erst in 2024 als Kassierer in den Vorstand des Sundern Heimatbundes
+    gewählt worden bin, beschäftigt mich ehrenamtliche Arbeit bereits seit über
+    35 Jahren. So bin ich schon seit 1989 Kassierer im Luftsportverein Sundern
+    e.V. und habe für ca. 15 Jahre das Amt des 1. Rendanten in der
+    Schützenbruderschaft St. Hubertus e.V. in Sundern ausgeübt. In meiner
+    Freizeit fahre ich gerne Fahrrad und Motorrad und versuche mich körperlich
+    fit zu halten, Urlaub kommt sicherlich auch nicht zu kurz. Die Leidenschaft
+    für das Doppelkopfspielen habe ich von meinem Vater geerbt, mit meinem Club
+    spiele ich seit über 35 Jahren zusammen.
 
 - name: Stefan Schraml
   role: Schriftführer
+  image: images/authors/stefan_schraml.jpg
+  bio: |
+    Ich bin Stefan Schraml, 60 Jahre jung und seit dieser Zeit Westfale. Geboren
+    und aufgewachsen in Hamm wohne ich seit nun 26 Jahren im schönen
+    Dörnholthausen. Beruflich berate ich als Sicherheitsingenieur Unternehmen in
+    Fragen der Arbeitssicherheit und das seit 30 Jahren in Dortmund. In meiner
+    Freizeit bewege ich mich viel in der Natur, von der wir in Sundern reichlich
+    haben. Seit 16 Jahren bin ich im Sunderner Heimatbund und lerne als
+    "Zugezogener" ständig Neues und "Altes" über meine Wahlheimat. Ich kümmere
+    mich seit 2019 als Schriftführer und gleichzeitig für einen kurzen Zeitraum
+    von 2 Jahren als Kassierer um viele organisatorische Fragen.
 
 - name: Klaus Baulmann
   role: Ehrenvorsitzender
