@@ -3,6 +3,19 @@ date: 2025-06-03T00:00:00+01:00
 title: Einladung zur Exkursion im September
 author: Friedrich Schulte-Kramer
 tags: ["exkursion"]
+events:
+  - date: 2025-09-06T10:00:00+02:00
+    title: Exkursion nach Büren und Paderborn
+    summary: Führung durch die Jesuitenkirche Büren und die Sonderausstellung "1250 Jahre Westfalen" in der Paderborner Kaiserpfalz.
+  - date: 2025-09-14T10:00:00+02:00
+    title: Tag des offenen Denkmals
+    summary: Besichtigung des restaurierten Fachwerkhauses von Thorsten Kaiser in Sundern-Linnepe.
+  - date: 2025-10-03T11:00:00+02:00
+    title: Hl. Messe am Tag der Deutschen Einheit
+    summary: Gottesdienst am Hubertuspöstchen, gestaltet von Feuerwehren, Musikverein Westenfeld und Sunderner Heimatbund.
+  - date: 2025-11-13T15:00:00+01:00
+    title: Vorweihnachtliches Treffen mit Kapellenführung
+    summary: Führung an der Fürstenberg-Kapelle mit anschließendem gemeinsamen Essen im Rodelhaus Neheim.
 ---
 
 Sehr geehrte Damen und Herren,

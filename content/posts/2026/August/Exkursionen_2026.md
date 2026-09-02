@@ -3,6 +3,16 @@ date: 2026-08-30T00:00:00+01:00
 title: Drei Exkursionen in 2026
 author: Friedrich Schulte-Kramer
 tags: ["exkursion"]
+events:
+  - date: 2026-10-02T08:00:00+02:00
+    title: Hengsteysee & Hohensyburg
+    summary: Besichtigung des Pumpspeicherkraftwerks Köppchenwerk und geführte Wanderung zur Hohensyburg mit Kaiser-Wilhelm-Denkmal.
+  - date: 2026-10-03T11:00:00+02:00
+    title: Hl. Messe am Tag der Deutschen Einheit
+    summary: Traditionelle Hl. Messe am Hubertuspöstchen mit den Jagdhornbläsern des Hegerings Sundern.
+  - date: 2026-12-10T16:00:00+01:00
+    title: Vorweihnachtliches Treffen mit Museumsführung
+    summary: Führung durch die Ausstellung "Macherland" im Sauerlandmuseum Arnsberg mit anschließendem Abendessen im Braubrüder.
 ---
 
 Sehr geehrte Damen und Herren, \

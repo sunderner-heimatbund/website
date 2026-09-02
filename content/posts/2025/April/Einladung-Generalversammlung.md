@@ -4,6 +4,10 @@ title: Einladung zur Generalversammlung 2025
 author: Stefan Schraml
 tags: ["mitgliederversammlung"]
 draft: false
+events:
+  - date: 2025-04-28T18:00:00+02:00
+    title: Generalversammlung 2025
+    summary: Mitgliederversammlung im "Landgasthof Kleiner" in Sundern-Stockum mit öffentlichem Vortrag und Filmpremiere "Attack on Sorpe Dam".
 ---
 
 Sehr geehrte Damen und Herren,

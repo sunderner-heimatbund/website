@@ -3,6 +3,10 @@ date: 2026-03-04T00:00:00+01:00
 title: Einladung zur Mitgliederversammlung
 author: Friedrich Schulte-Kramer
 tags: ["mitgliederversammlung"]
+events:
+  - date: 2026-03-26T18:00:00+01:00
+    title: Mitgliederversammlung
+    summary: Mitgliederversammlung im "Stadtkrug" mit anschließendem Vortrag von Werner Neuhaus über die Wunderheilung eines Allendorfer Kindes in Werl 1773.
 ---
 
 Sehr geehrte Damen und Herren,

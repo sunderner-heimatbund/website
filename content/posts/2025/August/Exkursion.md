@@ -4,6 +4,10 @@ title: Exkursion nach Büren und Paderborn
 author: Stefan Schraml
 tags: ["exkursion"]
 draft: false
+events:
+  - date: 2025-09-06T10:00:00+02:00
+    title: Exkursion nach Büren und Paderborn
+    summary: Führung durch die Jesuitenkirche Büren und die Sonderausstellung "1250 Jahre Westfalen" in der Paderborner Kaiserpfalz.
 ---
 
 Der Sunderner Heimatbund veranstaltet gemeinsam mit dem **Kulturring Sundern**
