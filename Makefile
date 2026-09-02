@@ -8,3 +8,6 @@ help:	## Show this help and exit.
 
 dev:	## Run hugo dev server
 	HUGO_MODULE_WORKSPACE=hugo.work hugo server -D --disableFastRender --noHTTPCache --ignoreVendorPaths "**"
+
+upgrade-deps:	## Ugrade Hugo module dependencies
+	hugo mod get -u ./...
