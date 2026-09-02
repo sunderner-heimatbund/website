@@ -14,7 +14,7 @@ unserer Region interessiert, ist bei uns herzlich willkommen.
 
 ## Beiträge
 
-Um die Arbeit and das Angebot des Vereins zu finanzieren, erheben wir von jedem
+Um die Arbeit und das Angebot des Vereins zu finanzieren, erheben wir von jedem
 Mitglied einmal im Jahr einen kleinen Mitgliedsbeitrag. Es gibt zwei Optionen:
 
 1. **Mitgliedsbeitrag: 9 € / Jahr** — beinhaltet die jährliche Ausgabe der
