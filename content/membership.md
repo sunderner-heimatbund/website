@@ -7,19 +7,30 @@ menu: main
 omit_header_text: true
 ---
 
-**[BEISPIEL]**
+Der Sunderner Heimatbund e.V. freut sich über neue Mitglieder — ob als passives
+Mitglied, das unsere Arbeit unterstützt, oder als aktives Mitglied, das sich in
+die Vereinsarbeit einbringen möchte. Wer sich für die Geschichte und Kultur
+unserer Region interessiert, ist bei uns herzlich willkommen.
 
-Der Sunderner Heimatbund e.V. sucht jederzeit neue Mitglieder. Ob als passives
-Mitglied zur Unterstützung unserer Arbeit oder als aktives Mitglied, das sich in
-die Vereinsarbeit einbringen möchte. Wir freuen uns über jedes neue Mitglied,
-das sich für die Geschichte und Kultur unserer Region interessiert.
+## Beiträge
 
-Mit dem regulären Mitgliedsbeitrag von **25€ / Jahr** unterstützen und sichern
-Sie unsere Arbeit und helfen uns, die Geschichte und Kultur unserer Region zu
-bewahren. Als Mitglied erhalten Sie jährlich die exklusive Vereinszeitschrift
-"Sunderner Heimatblätter" mit vielen interessanten Berichten über die Geschichte
-und das Brauchtum unserer Region. Schüler, Studierende und Auszubildende können
-mit dem **ermäßigten** Preis von **9€ / Jahr** ebenfalls Mitglied werden.
+Um die Arbeit and das Angebot des Vereins zu finanzieren, erheben wir von jedem
+Mitglied einmal im Jahr einen kleinen Mitgliedsbeitrag. Es gibt zwei Optionen:
 
-Füllen Sie bitte das Antragsformular aus und senden es postalisch oder via
-E-Mail an uns.
+1. **Mitgliedsbeitrag: 9 € / Jahr** — beinhaltet die jährliche Ausgabe der
+[Sunderner Heimatblätter](https://preview.sunderner-heimatbund.de/heimatbl%C3%A4tter/).
+
+2. **Mitgliedschaft im Sauerländer Heimatbund: 24 € / Jahr** — umfasst
+**zusätzlich** zur Basis-Mitgliedschaft auch die Mitgliedschaft im
+[Sauerländer Heimatbund](https://sauerlaender-heimatbund.de/), unserem
+Mutterverein, sowie dessen Zeitschrift *Sauerland*.
+
+Selbstverständlich hast Du auch die Möglichkeit, uns mit einem Betrag darüber
+hinaus zu unterstützen.
+
+## Antrag
+
+Um Mitglied zu werden, lade bitte unser Antragsformular herunter und sende es
+ausgefüllt sowie unterschrieben an uns, entweder postalisch oder per E-Mail.
+
+[Mitgliedsantrag]()
