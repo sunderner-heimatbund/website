@@ -10,10 +10,9 @@ events:
     summary: Mitgliederversammlung im "Landgasthof Kleiner" in Sundern-Stockum mit öffentlichem Vortrag und Filmpremiere "Attack on Sorpe Dam".
 ---
 
-Sehr geehrte Damen und Herren,
-liebe Heimatfreunde,
+Liebe Heimatfreunde,
 
-hiermit laden wir Sie alle recht herzlich zu unserer diesjährigen
+hiermit laden wir euch alle recht herzlich zu unserer diesjährigen
 **Mitgliederversammlung am 28. April 2025 ab 18 Uhr in den "Landgasthof
 Kleiner"** nach Sundern-Stockum ein, wo wir nach einem gemeinsamen Abendessen um
 ca. 19.00 Uhr folgende Tagesordnungspunkte behandeln möchten:
@@ -41,7 +40,7 @@ Zum gemeinsamen Abendessen bitten wir um Anmeldung des Essenswunsches bis zum
 20. April 2025 beim Vorsitzenden telefonisch unter 02933/1341 oder 0170 2149034
 oder per E-Mail an <f.schulte-kramer@t-online.de>.
 
-Wir freuen uns über Ihr Erscheinen und auf einen informationsreichen Abend.
+Wir freuen uns auf euer Kommen und einen informationsreichen Abend.
 
 ## Essensvorschläge
 

@@ -9,10 +9,9 @@ events:
     summary: Mitgliederversammlung im "Stadtkrug" mit anschließendem Vortrag von Werner Neuhaus über die Wunderheilung eines Allendorfer Kindes in Werl 1773.
 ---
 
-Sehr geehrte Damen und Herren,
-liebe Heimatfreunde,
+Liebe Heimatfreunde,
 
-hiermit laden wir Sie alle recht herzlich zu unserer diesjährigen
+hiermit laden wir euch alle recht herzlich zu unserer diesjährigen
 **Mitgliederversammlung am 26. März 2026 ab 18 Uhr in den "Stadtkrug"** nach
 Sundern ein, wo wir nach einem gemeinsamen Abendessen um ca. 19.00 Uhr folgende
 Tagesordnungspunkte behandeln möchten:
@@ -40,7 +39,7 @@ Essenswunsches bis zum 23. März 2026 beim Vorsitzenden telefonisch
 unter 02933/1341 oder 0170/2149034 oder pe E-Mail an
 <f.schulte-kramer@t-online.de>.
 
-Wir freuen uns über Ihr Erscheinen und auf einen informationsreichen Abend.
+Wir freuen uns auf euer Kommen und einen informationsreichen Abend.
 
 Mit freundlichen Grüßen
 Dr. Friedrich Schulte-Kramer

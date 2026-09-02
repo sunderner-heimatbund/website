@@ -18,8 +18,7 @@ events:
     summary: Führung an der Fürstenberg-Kapelle mit anschließendem gemeinsamen Essen im Rodelhaus Neheim.
 ---
 
-Sehr geehrte Damen und Herren,
-liebe Heimatfreunde,
+Liebe Heimatfreunde,
 
 die erste Exkursion in diesem Jahr führt uns am **Samstag, den 6. September
 2025**  nach **Büren** und nach **Paderborn**. In Büren werden wir die
@@ -61,4 +60,4 @@ Tel.02933/1341, 0170 / 2149034 oder <f.schulte-kramer@t-online.de>.
 
 Für Rückfragen zu den Exkursionen stehe ich jederzeit zur Verfügung.
 
-Ihr Friedrich Schulte-Kramer
+Friedrich Schulte-Kramer

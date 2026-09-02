@@ -15,10 +15,9 @@ events:
     summary: Führung durch die Ausstellung "Macherland" im Sauerlandmuseum Arnsberg mit anschließendem Abendessen im Braubrüder.
 ---
 
-Sehr geehrte Damen und Herren, \
-liebe Heimatfreunde,
+Liebe Heimatfreunde,
 
-hiermit möchte ich Sie zu den diesjährigen verbleibenden Veranstaltungen des
+hiermit möchte ich euch zu den diesjährigen verbleibenden Veranstaltungen des
 Sunderner Heimatbundes einladen.
 
 ## Hengsteysee & Hohensyburg (02.10.)
